@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">schema</string>
+    <string name="t_viewSkift1">Lunch skift</string>
+    <string name="btn_MittSchema">Mitt Schema</string>
+    <string name="t_view_Datum">Datum</string>
+    <string name="t_view_Skift2">Middags skift</string>
+</resources>
