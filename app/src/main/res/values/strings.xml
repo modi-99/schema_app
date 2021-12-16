@@ -4,4 +4,35 @@
     <string name="btn_MittSchema">Mitt Schema</string>
     <string name="t_view_Datum">Datum</string>
     <string name="t_view_Skift2">Middags skift</string>
+    <string name="t_view_Date">21-01-07</string>
+    <string name="btn_lunchSkift" />
+
+    <string-array name="employee_name">
+        <item>Mohammed</item>
+        <item>Pontus</item>
+        <item>Wolfgang</item>
+        <item>Martin</item>
+        <item>Erik</item>
+        <item>Hassan</item>
+    </string-array>
+
+    <string-array name="c_date">
+        <item>2021-01-10</item>
+        <item>2021-01-11</item>
+        <item>2021-01-12</item>
+        <item>2021-01-13</item>
+        <item>2021-01-14</item>
+        <item>2021-01-15</item>
+        <item>2021-01-16</item>
+    </string-array>
+
+    <string-array name="shift">
+        <item>Lunch</item>
+        <item>Middag</item>
+        <item>Lunch</item>
+        <item>Lunch</item>
+        <item> </item>
+        <item>Middag</item>
+        <item>Middag</item>
+    </string-array>
 </resources>

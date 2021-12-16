@@ -28,4 +28,10 @@ public class Schema extends AppCompatActivity {
         Intent intent= new Intent(this, MittSchema.class);
         startActivity(intent);
     }
+
+    public void hideBtn(Button b){
+        if(b.getVisibility()!=View.INVISIBLE){
+            b.setVisibility(View.INVISIBLE);
+        }
+    }
 }
