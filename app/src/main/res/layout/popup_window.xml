@@ -7,13 +7,14 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="22dp"
         android:text="Byt skiftet med..."
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="427dp"
-        tools:layout_editor_absoluteY="137dp" />
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="425dp"
+        tools:layout_editor_absoluteY="138dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,28 +28,39 @@
         tools:layout_editor_absoluteY="77dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Välj namn:"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="411dp"
-        tools:layout_editor_absoluteY="168dp" />
-
-    <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gödkänd"
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="254dp" />
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Godkänna"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="282dp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:backgroundTint="@color/white"
+        android:text="Avbryt"
+        android:textColor="@color/black"
         tools:layout_editor_absoluteX="547dp"
-        tools:layout_editor_absoluteY="254dp" />
+        tools:layout_editor_absoluteY="282dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        tools:layout_editor_absoluteX="388dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="96dp"
+        android:layout_height="22dp"
+        android:text="Välj namn:"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="414dp"
+        tools:layout_editor_absoluteY="195dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
