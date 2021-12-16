@@ -6,7 +6,18 @@
     android:layout_height="match_parent"
     tools:context="MittSchema">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r_view_Mschema"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,225 +61,27 @@
                 android:textSize="30sp" />
 
         </TableRow>
+        <!--
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
-            <TextView
-                android:id="@+id/t_view_Datum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-08"
-                android:textSize="20sp" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
-            <Button
-                android:id="@+id/btn_LunchSkift"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                tools:ignore="SpeakableTextPresentCheck" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/r_view_Mschema"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
 
-            <Button
-                android:id="@+id/btn_MiddagSkift"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/t_view_Datum2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-09"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn_LunchSkift2"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Button
-                android:id="@+id/btn_MiddagSkift2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/t_view_Datum3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-10"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn_LunchSkift3"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Button
-                android:id="@+id/btn_MiddagSkift3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/t_view_Datum4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-11"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn_LunchSkift4"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Button
-                android:id="@+id/btn_MiddagSkift4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/t_view_Datum5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-12"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn_LunchSkift5"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Button
-                android:id="@+id/btn_MiddagSkift5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/t_view_Datum6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-13"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn_LunchSkift6"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Button
-                android:id="@+id/btn_MiddagSkift6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/t_view_Datum7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40sp"
-                android:text="21-01-14"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn_LunchSkift7"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:text="@string/btn_lunchSkift"
-                android:visibility="visible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <Button
-                android:id="@+id/btn_MiddagSkift7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@android:color/holo_green_dark"
-                android:visibility="invisible"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
+                        />
+                </TableRow>
+        -->
     </TableLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,12 +4,33 @@ import java.util.Date;
 
 public class Employee {
 
-    int Id;
-    String name;
-    Date date;
-    String shift;
+
+    //String name;
+    private String cDate;
+    private String shift;
+    private boolean lunchSkift;
+    private boolean middagSkift;
 
 
+    public Employee(String _cDate, boolean b, boolean c){
+        this.cDate=_cDate;
+        lunchSkift=b;
+        middagSkift=c;
+    }
+
+
+    public String getDate(){
+        return cDate;
+    }
+
+    public boolean getLunchShift(){
+        return lunchSkift;
+
+    }
+    public boolean getDinnerShift() {
+        return middagSkift;
+
+    }
 
 }
 
