@@ -60,7 +60,7 @@
         android:layout_height="22dp"
         android:text="Välj namn:"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="414dp"
-        tools:layout_editor_absoluteY="195dp" />
+        tools:layout_editor_absoluteX="410dp"
+        tools:layout_editor_absoluteY="240dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
