@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,14 +23,6 @@ public class MittSchema extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         ArrayList<Employee> cDate= new ArrayList<Employee>();
-       /* cDate.add("21-01-10");
-        cDate.add("21-01-11");
-        cDate.add("21-01-12");
-        cDate.add("21-01-13");
-        cDate.add("21-01-14");
-        cDate.add("21-01-15");
-        cDate.add("21-01-16");
-        */
 
         Data.data.addDates(new Employee("21-01-10", true,false));
         Data.data.addDates(new Employee("21-01-11",true,false));
@@ -49,6 +43,13 @@ public class MittSchema extends AppCompatActivity {
         Data.data.sAdapter=new ScheduleAdapter(MittSchema.this);
         recyclerView.setAdapter(Data.data.sAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MittSchema.this));
+
+        /*
+        Spinner spinner= findViewById(R.id.spinner1);
+        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.employee_name, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);*/
+
 
     }
 }

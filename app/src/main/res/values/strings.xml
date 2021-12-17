@@ -16,23 +16,4 @@
         <item>Hassan</item>
     </string-array>
 
-    <string-array name="c_date">
-        <item>2021-01-10</item>
-        <item>2021-01-11</item>
-        <item>2021-01-12</item>
-        <item>2021-01-13</item>
-        <item>2021-01-14</item>
-        <item>2021-01-15</item>
-        <item>2021-01-16</item>
-    </string-array>
-
-    <string-array name="shift">
-        <item>Lunch</item>
-        <item>Middag</item>
-        <item>Lunch</item>
-        <item>Lunch</item>
-        <item> </item>
-        <item>Middag</item>
-        <item>Middag</item>
-    </string-array>
 </resources>

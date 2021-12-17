@@ -24,6 +24,7 @@ public class Schema extends AppCompatActivity {
         });
     }
 
+
     public void openMittSchema(){
         Intent intent= new Intent(this, MittSchema.class);
         startActivity(intent);

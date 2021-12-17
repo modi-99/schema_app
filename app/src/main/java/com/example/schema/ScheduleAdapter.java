@@ -1,10 +1,15 @@
 package com.example.schema;
 
 import android.content.Context;
+import android.content.Intent;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.PopupWindow;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -62,10 +67,22 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
         int position;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+
             position=getAdapterPosition();
             date= itemView.findViewById(R.id.t_view_Datum);
             lunchBtn=itemView.findViewById(R.id.btn_LunchSkift);
             dinnerBtn=itemView.findViewById(R.id.btn_MiddagSkift);
+
+            lunchBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    final Intent intent;
+                    intent = new Intent(itemView.getContext(), Pop.class);
+                    itemView.getContext().startActivity(intent);
+
+                }
+            });
+
 
 
 
