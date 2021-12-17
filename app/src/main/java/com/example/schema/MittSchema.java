@@ -44,11 +44,8 @@ public class MittSchema extends AppCompatActivity {
         recyclerView.setAdapter(Data.data.sAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MittSchema.this));
 
-        /*
-        Spinner spinner= findViewById(R.id.spinner1);
-        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.employee_name, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);*/
+
+
 
 
     }
