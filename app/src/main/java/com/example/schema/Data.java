@@ -11,7 +11,9 @@ public class Data {
     public ArrayList<Employee> cDate= new ArrayList<>();
 
 
-
+    public void ResetAll(){
+        cDate=new ArrayList<>();
+    }
 
     public void addDates(Employee cD){
         cDate.add(cD);

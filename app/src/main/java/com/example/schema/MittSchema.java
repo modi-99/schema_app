@@ -22,8 +22,8 @@ public class MittSchema extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ArrayList<Employee> cDate= new ArrayList<Employee>();
-
+        //ArrayList<Employee> cDate= new ArrayList<Employee>();
+        Data.data.ResetAll();
         Data.data.addDates(new Employee("21-01-10", true,false));
         Data.data.addDates(new Employee("21-01-11",true,false));
         Data.data.addDates(new Employee("21-01-12", true,false));

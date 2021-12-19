@@ -75,7 +75,8 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
 
             lunchBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v) {
+                public void onClick(View v)
+                {
                     final Intent intent;
                     intent = new Intent(itemView.getContext(), Pop.class);
                     itemView.getContext().startActivity(intent);

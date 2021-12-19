@@ -6,6 +6,7 @@
     <string name="t_view_Skift2">Middags skift</string>
     <string name="t_view_Date">21-01-07</string>
     <string name="btn_lunchSkift" />
+    <string name="hint_resource">Välj namn</string>
 
     <string-array name="employee_name">
         <item>Mohammed</item>
