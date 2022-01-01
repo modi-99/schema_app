@@ -20,8 +20,12 @@ import org.w3c.dom.Text;
 public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyViewHolder> {
 
     Context context;
+    public static final String ID_VALUE = "ID";
+    public static final String DATE_VALUE = "DATE";
+    public static final String LUNCH_VALUE = "LUNCH";
+    public static final String DINNER_VALUE = "DINNER";
 
-    ScheduleAdapter(Context context){this.context=context;}
+    public ScheduleAdapter(Context context){this.context=context;}
 
     @NonNull
     @Override
@@ -79,6 +83,10 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
                 {
                     final Intent intent;
                     intent = new Intent(itemView.getContext(), Pop.class);
+                    intent.putExtra(ID_VALUE, emp_1.getId());
+                    intent.putExtra(DINNER_VALUE, emp_1.getDinnerShift());
+                    intent.putExtra(LUNCH_VALUE, emp_1.getLunchShift());
+                    intent.putExtra(DATE_VALUE, emp_1.getDate());
                     itemView.getContext().startActivity(intent);
 
                 }
@@ -89,6 +97,10 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.MyView
                 public void onClick(View v) {
                     final Intent intent;
                     intent = new Intent(itemView.getContext(), Pop.class);
+                    intent.putExtra(ID_VALUE, emp_1.getId());
+                    intent.putExtra(DINNER_VALUE, emp_1.getDinnerShift());
+                    intent.putExtra(LUNCH_VALUE, emp_1.getLunchShift());
+                    intent.putExtra(DATE_VALUE, emp_1.getDate());
                     itemView.getContext().startActivity(intent);
 
                 }
