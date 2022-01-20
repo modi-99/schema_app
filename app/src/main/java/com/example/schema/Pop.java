@@ -83,7 +83,6 @@ public class Pop extends MittSchema {
                     putSchedule.handler = new Handler();
                     putSchedule.execute();
 
-
                     finish();
                     Intent i = new Intent(getApplicationContext(), MittSchema.class);
                     startActivity(i);

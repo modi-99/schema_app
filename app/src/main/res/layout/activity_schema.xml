@@ -7,6 +7,7 @@
     tools:context=".Schema">
 
     <Button
+        android:visibility="invisible"
         android:id="@+id/btn_Skift"
         android:layout_width="297dp"
         android:layout_height="132dp"
@@ -15,6 +16,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:text="Skiftbyte"
+        android:textSize="36dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
@@ -31,6 +34,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:text="@string/btn_MittSchema"
+        android:textSize="25dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
